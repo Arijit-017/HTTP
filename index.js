@@ -3,6 +3,10 @@ const app = express();
 
 const PORT = 3000;
 let count=0;
+setTimeout(()=>{
+  count=0;
+},60000);
+
 function requestCounter(req, res, next) {
   count++;
   next();
