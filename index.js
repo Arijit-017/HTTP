@@ -13,7 +13,7 @@ function requestCounter(req, res, next) {
 }
 
 function ratelimiter(req, res, next){
-  if(count>50){
+  if(count>10){
     res.send("You have reached the maximum number of request");
   }
   else{
